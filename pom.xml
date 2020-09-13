@@ -22,10 +22,10 @@
             <id>AutomationFrameworkRepo</id>
             <url>https://pkgs.dev.azure.com/AssurityAF/fd5f609d-45e6-4343-836e-706b9c52a200/_packaging/AutomationFrameworkRepo/maven/v1</url>
             <releases>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </releases>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </snapshots>
         </repository>
         <repository>
