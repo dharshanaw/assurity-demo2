@@ -1,0 +1,106 @@
+configurations:
+  executionEnvironment: integration
+  coverage: false
+  frameworkDashboard: true
+userManagement:
+  - tenant:
+      - _key: superTenanat
+      - domain: super
+      - user:
+          _key: user1
+          userName: admin
+          password: admin
+          roles: admin,dev,test,dfdf
+      - user:
+          _key: user2
+          userName: testuser1
+          password: test123
+          roles: dev,test,dfdf
+  - tenant:
+      - _key: adminTenanat
+      - domain: admin
+      - user:
+          _key: user1
+          userName: admin
+          password: admin
+          roles: admin,dev,test,dfdf
+      - user:
+          _key: user2
+          userName: testuser1
+          password: test123
+          roles: dev,test,dfdf
+endpointManagement:
+  - endpoint:
+      _key: default
+      endpointType: http
+      host: localhost
+      port: 8083
+  - endpoint:
+      _key: default2
+      endpointType: http
+      host: localhost
+      port: 8083
+integrations:
+  - integration:
+      name: dynamic365
+      client_id: 180b997f-18c3-43db-9c7e-bc85103dd84e
+      redirect_uri: https://login.microsoftonline.com/common/oauth2/nativeclient
+      grant_type: password
+      client_secret: _mLZ9BA.r5A.4Z.jJ1TzTM51Q1-LvLyaeq
+      username: xxxxx@assurity.co.nz
+      password: xxxxxxxxx
+      resource: https://assurity2.crm6.dynamics.com
+      tenant_id: 61cc9188-22a9-461c-979e-02044c23edd2
+  - integration:
+      name: workday
+      client_id: 180b997f-18c3-43db-9c7e-bc85103dd84e
+      redirect_uri: https://login.microsoftonline.com/common/oauth2/nativeclient
+      grant_type: password
+      client_secret: _mLZ9BA.r5A.4Z.jJ1TzTM51Q1-LvLyaeq
+      username: xxxxx@assurity.co.nz
+      password: xxxxxxxxx
+      resource: https://assurity2.crm6.dynamics.com
+      tenant_id: 61cc9188-22a9-461c-979e-02044c23edd2
+toolingIntegrations:
+  - tooling:
+      _key: dashboard
+      endpoint: "http://localhost:8080"
+      uuid: '731918a4-da59-49ce-89e8-9d3ac44599d0'
+      launch: 'superadmin_TEST_EXAMPLE'
+      project: 'superadmin_personal'
+  - tooling:
+      _key: testcaseman
+      endpoint: 'localhost8080'
+      uuid: '731918a4-da59-49ce-89e8-9d3ac44599d0'
+      launch: 'superadmin_TEST_EXAMPLE'
+      project: 'superadmin_personal'
+datamapperManagement:
+  dataSources:
+    - dataSource:
+        name: mysqlds
+        type: mysql
+        connectionParameters:
+          url: jdbc:mysql://db.mysql-wso2.com:3306/apimgtdb?autoReconnect=true
+          username: root
+          password: password
+    - dataSource:
+        name: customerxls
+        type: xlsx
+        connectionParameters:
+          path: datasource/customerData.xlsx
+          sheet: 1
+  dataMappings:
+    - dataMapping:
+        providerName: assurity.mysql.dataprovider
+        dataSource: mysqlds
+        database: employee
+        mapperQuery: select name, id from Employee
+        mapping:
+          - map: name -> tsname
+          - map: id -> tsid
+    - dataMapping:
+        providerName: assurity.xsls.dataprovider
+        dataSource: customerxls
+        mapping:
+          - map: name -> tsname
+          - map: id -> tsid

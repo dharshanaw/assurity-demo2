@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Response Validate Test Site" verbose="1" >
+    <listeners>
+<!--        <listener class-name="com.assurity.automation.engine.managers.FrameworkReportManager" />-->
+<!--        <listener class-name="com.assurity.automation.engine.managers.FrameworkDashBoardManager" />-->
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+    </listeners>
+    <test name="API Response Content Validation Test" >
+        <classes>
+            <class name="com.assurity.demo2.tests.InitTest"/>
+            <class name="com.assurity.demo2.tests.EmployeeServiceTest"/>
+        </classes>
+    </test>
+</suite>
