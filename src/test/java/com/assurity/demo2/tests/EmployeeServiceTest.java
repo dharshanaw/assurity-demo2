@@ -34,7 +34,7 @@ public class EmployeeServiceTest extends FrameworkBaseTest {
         employee.setFirstName("user");
         employee.setLastName("demo");
         genericRestClient.doPost("/employees/adduser/", employee);
-        Assert.notNull(getResponse(), "List is empty, Employee not added");
+        Assert.isNull(getResponse(), "List is empty, Employee not added");
     }
 
     @Test(dataProvider = "assurity.testng.dataprovider", dataProviderClass = TestNgDataProvider.class)
@@ -51,19 +51,6 @@ public class EmployeeServiceTest extends FrameworkBaseTest {
         Assert.notNull(response, "Empty Response with no return status");
     }
 
-//    @Test(dataProvider = "assurity.testng.dataprovider", dataProviderClass = TestNgDataProvider.class)
-//    @CustomAttribute(name = "dataProvider", values = {"assurity.mysql.dataprovider"})
-//    public void addEmployeeDataProviderTestcase2(Object data) {
-//        Map<String, Object> data2 = (Map<String, Object>) data;
-//
-//        Employee employee = new Employee();
-//        employee.setId((int) Double.parseDouble(data2.get("id").toString()));
-//        employee.setEmail(data2.get("email").toString());
-//        employee.setFirstName(data2.get("name").toString());
-//        employee.setLastName("demo");
-//        Object response = genericRestClient.doPost("/employees/adduser/", employee);
-//        Assert.notNull(response, "Empty Response with no return status");
-//    }
 
     @Test
     public void getEmployeeTestcase() {

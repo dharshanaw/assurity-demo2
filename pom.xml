@@ -9,7 +9,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>assurity-demo2</artifactId>
     <groupId>com.assurity.demo2</groupId>
-
+    <version>1.0-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -19,23 +19,19 @@
 
     <repositories>
         <repository>
-            <id>AutomationFrameworkRepo</id>
-            <url>https://pkgs.dev.azure.com/AssurityAF/fd5f609d-45e6-4343-836e-706b9c52a200/_packaging/AutomationFrameworkRepo/maven/v1</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+            <id>AssurityFrameworkRepo</id>
+            <url>
+                https://pkgs.dev.azure.com/aucklandlab/af84365b-9be1-48c5-b7ed-daaaa39b18c4/_packaging/AssurityFrameworkRepo/maven/v1
+            </url>
         </repository>
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>bintray-epam-reportportal</id>
-            <name>bintray</name>
-            <url>http://dl.bintray.com/epam/reportportal</url>
-        </repository>
+<!--        <repository>-->
+<!--            <snapshots>-->
+<!--                <enabled>false</enabled>-->
+<!--            </snapshots>-->
+<!--            <id>bintray-epam-reportportal</id>-->
+<!--            <name>bintray</name>-->
+<!--            <url>http://dl.bintray.com/epam/reportportal</url>-->
+<!--        </repository>-->
     </repositories>
 
     <dependencies>
@@ -48,11 +44,11 @@
             <type>pom</type>
             <scope>import</scope>
         </dependency>
-        <dependency>
-            <groupId>com.epam.reportportal</groupId>
-            <artifactId>agent-java-testng</artifactId>
-            <version>5.0.3</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.epam.reportportal</groupId>-->
+<!--            <artifactId>agent-java-testng</artifactId>-->
+<!--            <version>5.0.3</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework</groupId>
