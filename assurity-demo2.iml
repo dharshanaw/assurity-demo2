@@ -12,20 +12,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: com.epam.reportportal:agent-java-testng:5.0.3" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: com.epam.reportportal:client-java:5.0.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.aspectj:aspectjweaver:1.9.5" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.aspectj:aspectjrt:1.9.5" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.4" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: io.reactivex.rxjava2:rxjava:2.2.19" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.reactivestreams:reactive-streams:1.0.3" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.tika:tika-core:1.4" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: com.epam.reportportal:commons-model:5.0.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: io.swagger:swagger-annotations:1.5.24" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: javax.validation:validation-api:2.0.1.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.commons:commons-lang3:3.9" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-web:5.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:5.2.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.2.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.2.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.2.8.RELEASE" level="project" />
@@ -37,8 +24,13 @@
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.12.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.13.3" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.30" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.annotation:jakarta.annotation-api:1.3.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.4" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.4" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.10.4" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.2" level="project" />
@@ -57,6 +49,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:1.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.ow2.asm:asm:5.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:3.13.2" level="project" />
@@ -85,155 +78,17 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.google.inject:guice:no_aop:4.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: aopalliance:aopalliance:1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.guava:guava:19.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.google.guava:guava:29.0-jre" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.google.guava:failureaccess:1.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.checkerframework:checker-qual:2.11.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.google.errorprone:error_prone_annotations:2.3.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.google.j2objc:j2objc-annotations:1.3" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.25" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.11" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.assurity:framework-engine:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-all:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-api:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.code.findbugs:jsr305:3.0.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.errorprone:error_prone_annotations:2.3.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.18" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-auth:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.auth:google-auth-library-credentials:0.20.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-context:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-core:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.code.gson:gson:2.8.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.android:annotations:4.1.1.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.perfmark:perfmark-api:0.19.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-grpclb:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.protobuf:protobuf-java-util:3.12.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-netty:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-codec-http2:4.1.45.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-common:4.1.45.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-buffer:4.1.45.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-transport:4.1.45.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-resolver:4.1.45.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-codec:4.1.45.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-handler:4.1.45.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-codec-http:4.1.45.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-handler-proxy:4.1.45.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-codec-socks:4.1.45.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-okhttp:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.squareup.okhttp:okhttp:2.7.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.squareup.okio:okio:1.13.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-protobuf:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.api.grpc:proto-google-common-protos:1.17.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-protobuf-lite:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-services:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-stub:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-testing:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.opencensus:opencensus-api:0.24.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-xds:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-alts:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.conscrypt:conscrypt-openjdk-uber:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.auth:google-auth-library-oauth2-http:0.20.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.auto.value:auto-value-annotations:1.7" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.http-client:google-http-client:1.34.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.j2objc:j2objc-annotations:1.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.opencensus:opencensus-contrib-http-util:0.24.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.http-client:google-http-client-jackson2:1.34.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.re2j:re2j:1.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.opencensus:opencensus-proto:0.2.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.grpc:grpc-netty-shaded:1.31.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-all:4.1.51.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.protobuf:protobuf-java:3.13.0" level="project" />
-    <orderEntry type="library" name="Maven: jakarta.annotation:jakarta.annotation-api:1.3.5" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.4" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.10.4" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.13.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.logging.log4j:log4j-core:2.13.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: mysql:mysql-connector-java:8.0.20" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.thetransactioncompany:jsonrpc2-base:1.36" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.thetransactioncompany:jsonrpc2-client:1.16.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-configuration2:2.7" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-text:1.8" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: commons-logging:commons-logging:1.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.ini4j:ini4j:0.5.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.poi:poi:4.1.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: commons-codec:commons-codec:1.13" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-collections4:4.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-math3:3.6.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.zaxxer:SparseBitSet:1.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.poi:poi-ooxml:4.1.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.poi:poi-ooxml-schemas:4.1.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-compress:1.19" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.github.virtuald:curvesapi:1.06" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.xmlbeans:xmlbeans:3.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.tomcat:tomcat-jdbc:9.0.34" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.tomcat:tomcat-juli:9.0.34" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.hazelcast:hazelcast-enterprise-client:3.11.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.hazelcast:hazelcast-enterprise:3.11.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.assurity:framework-utilities:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.jersey.core:jersey-server:2.29.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.jersey.core:jersey-common:2.29.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.jersey.core:jersey-client:2.29.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: jakarta.ws.rs:jakarta.ws.rs-api:2.1.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.jersey.media:jersey-media-jaxb:2.29.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.hk2.external:jakarta.inject:2.6.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: jakarta.validation:jakarta.validation-api:2.0.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.cxf:cxf-bundle:2.7.18" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.velocity:velocity:1.7" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: wsdl4j:wsdl4j:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.sun.xml.bind:jaxb-xjc:2.2.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.ws.xmlschema:xmlschema-core:2.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: antlr:antlr:2.7.7" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: xml-resolver:xml-resolver:1.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.geronimo.specs:geronimo-jaxws_2.2_spec:1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.woodstox:woodstox-core-asl:4.4.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.geronimo.specs:geronimo-javamail_1.4_spec:1.7.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-server:9.4.26.v20200117" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-continuation:9.4.26.v20200117" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-http:9.4.26.v20200117" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-io:9.4.26.v20200117" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-util:9.4.26.v20200117" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-security:9.4.26.v20200117" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.geronimo.specs:geronimo-servlet_3.0_spec:1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-jms:5.2.4.RELEASE" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-messaging:5.2.4.RELEASE" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-asm:3.0.7.RELEASE" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-tx:5.2.4.RELEASE" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: commons-lang:commons-lang:2.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpcore-nio:4.4.13" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpcore:4.4.13" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpasyncclient:4.1.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpclient:4.5.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.mina:mina-core:2.0.7" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: asm:asm:3.3.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: rhino:js:1.7R2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: net.oauth.core:oauth-provider:20100527" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: net.oauth.core:oauth:20100527" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: net.sf.ehcache:ehcache-core:2.5.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.ws.security:wss4j:1.6.19" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.santuario:xmlsec:1.5.8" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.opensaml:opensaml:2.6.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.opensaml:openws:1.5.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.opensaml:xmltooling:1.4.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: joda-time:joda-time:2.10.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: xalan:serializer:2.7.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.neethi:neethi:3.0.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: javax.ws.rs:javax.ws.rs-api:2.1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.resteasy:resteasy-client:4.5.5.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.resteasy:resteasy-client-api:4.5.5.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.resteasy:resteasy-core-spi:4.5.5.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec:1.0.1.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.spec.javax.annotation:jboss-annotations-api_1.3_spec:2.0.1.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.resteasy:resteasy-core:4.5.5.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.ibm.async:asyncutil:0.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.microprofile.config:microprofile-config-api:1.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.smallrye.config:smallrye-config:1.6.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.smallrye.config:smallrye-config-common:1.6.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.logging:jboss-logging:3.4.1.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: commons-io:commons-io:2.5" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.1_spec:2.0.1.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.json:json:20190722" level="project" />
+    <orderEntry type="library" name="Maven: com.assurity:framework-engine:unknown" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.assurity:framework-utilities:unknown" level="project" />
   </component>
 </module>

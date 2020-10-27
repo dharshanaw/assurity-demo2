@@ -20,9 +20,13 @@
     <repositories>
         <repository>
             <id>AssurityFrameworkRepo</id>
-            <url>
-                https://pkgs.dev.azure.com/aucklandlab/af84365b-9be1-48c5-b7ed-daaaa39b18c4/_packaging/AssurityFrameworkRepo/maven/v1
-            </url>
+            <url>https://pkgs.dev.azure.com/aucklandlab/af84365b-9be1-48c5-b7ed-daaaa39b18c4/_packaging/AssurityFrameworkRepo/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
 <!--        <repository>-->
 <!--            <snapshots>-->
@@ -78,11 +82,13 @@
         <dependency>
             <groupId>com.assurity</groupId>
             <artifactId>framework-engine</artifactId>
+            <version>1.0-SNAPSHOT</version>
             <!--            <scope>test</scope>-->
         </dependency>
         <dependency>
             <groupId>com.assurity</groupId>
             <artifactId>framework-utilities</artifactId>
+            <version>1.0-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -220,18 +226,55 @@
                     </images>
                 </configuration>
             </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-report-plugin</artifactId>-->
+<!--                <version>3.0.0-M3</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>test</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>report</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>3.0.0-M3</version>
+                <!-- Extended Maven antrun plugin -->
+                <!-- https://maven-antrun-extended-plugin.dev.java.net/ -->
+                <groupId>org.jvnet.maven-antrun-extended-plugin</groupId>
+                <artifactId>maven-antrun-extended-plugin</artifactId>
                 <executions>
                     <execution>
+                        <id>test-reports</id>
                         <phase>test</phase>
+                        <configuration>
+                            <tasks>
+                                <junitreport todir="target/">
+                                    <fileset dir="target/">
+                                        <include name="**/*.xml"/>
+                                    </fileset>
+                                    <report format="noframes" todir="target/"/>
+                                </junitreport>
+                            </tasks>
+                        </configuration>
                         <goals>
-                            <goal>report</goal>
+                            <goal>run</goal>
                         </goals>
                     </execution>
                 </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant-junit</artifactId>
+                        <version>1.8.0</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant-trax</artifactId>
+                        <version>1.8.0</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
