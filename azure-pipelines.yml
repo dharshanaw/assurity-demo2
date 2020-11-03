@@ -17,6 +17,7 @@ steps:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
+    mavenAuthenticateFeed: true
     publishJUnitResults: true
-    testResultsFiles: '**/failsafe-reports/TEST-*.xml'
-    goals: 'package'
+    testResultsFiles: '**/target/failsafe-reports/TEST-*.xml'
+    goals: 'test'
