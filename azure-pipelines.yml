@@ -8,8 +8,11 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
-
 steps:
+- task: MavenAuthenticate@0
+  inputs:
+    artifactsFeeds: 'AssurityFrameworkRepo'
+    mavenServiceConnections: 'repo'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -17,6 +20,7 @@ steps:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
+    mavenAuthenticateFeed: true
     publishJUnitResults: true
-    testResultsFiles: '**/failsafe-reports/TEST-*.xml'
-    goals: 'package'
+    testResultsFiles: '**/target/failsafe-reports/TEST-*.xml'
+    goals: 'test'
