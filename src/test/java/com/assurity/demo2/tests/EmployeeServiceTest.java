@@ -34,7 +34,7 @@ public class EmployeeServiceTest extends FrameworkBaseTest {
         employee.setFirstName("user");
         employee.setLastName("demo");
         genericRestClient.doPost("/employees/adduser/", employee);
-        Assert.isNull(getResponse(), "List is empty, Employee not added");
+        Assert.notNull(getResponse(), "List is empty, Employee not added");
     }
 
     @Test(dataProvider = "assurity.testng.dataprovider", dataProviderClass = TestNgDataProvider.class)

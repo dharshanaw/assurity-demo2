@@ -20,7 +20,9 @@
     <repositories>
         <repository>
             <id>AssurityFrameworkRepo</id>
-            <url>https://pkgs.dev.azure.com/aucklandlab/af84365b-9be1-48c5-b7ed-daaaa39b18c4/_packaging/AssurityFrameworkRepo/maven/v1</url>
+            <url>
+                https://pkgs.dev.azure.com/aucklandlab/af84365b-9be1-48c5-b7ed-daaaa39b18c4/_packaging/AssurityFrameworkRepo/maven/v1
+            </url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -28,14 +30,14 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-<!--        <repository>-->
-<!--            <snapshots>-->
-<!--                <enabled>false</enabled>-->
-<!--            </snapshots>-->
-<!--            <id>bintray-epam-reportportal</id>-->
-<!--            <name>bintray</name>-->
-<!--            <url>http://dl.bintray.com/epam/reportportal</url>-->
-<!--        </repository>-->
+        <!--        <repository>-->
+        <!--            <snapshots>-->
+        <!--                <enabled>false</enabled>-->
+        <!--            </snapshots>-->
+        <!--            <id>bintray-epam-reportportal</id>-->
+        <!--            <name>bintray</name>-->
+        <!--            <url>http://dl.bintray.com/epam/reportportal</url>-->
+        <!--        </repository>-->
     </repositories>
 
     <dependencies>
@@ -48,11 +50,11 @@
             <type>pom</type>
             <scope>import</scope>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.epam.reportportal</groupId>-->
-<!--            <artifactId>agent-java-testng</artifactId>-->
-<!--            <version>5.0.3</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.epam.reportportal</groupId>-->
+        <!--            <artifactId>agent-java-testng</artifactId>-->
+        <!--            <version>5.0.3</version>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -91,6 +93,14 @@
             <version>1.0-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>reportng</artifactId>
+            <version>1.2.2</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>
@@ -127,9 +137,15 @@
                     <properties>
                         <property>
                             <name>usedefaultlisteners</name>
-                            <value>false</value> <!-- disabling default listeners is optional -->
+                            <value>false</value>
                         </property>
+<!--                        <property>-->
+<!--                            <name>listener</name>-->
+<!--                            <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>-->
+<!--                        </property>-->
                     </properties>
+                    <workingDirectory>target/</workingDirectory>
+
                 </configuration>
                 <executions>
                     <!--                    <execution>-->
@@ -226,57 +242,21 @@
                     </images>
                 </configuration>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-report-plugin</artifactId>-->
-<!--                <version>3.0.0-M3</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <phase>test</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>report</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
             <plugin>
-                <!-- Extended Maven antrun plugin -->
-                <!-- https://maven-antrun-extended-plugin.dev.java.net/ -->
-                <groupId>org.jvnet.maven-antrun-extended-plugin</groupId>
-                <artifactId>maven-antrun-extended-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>test-reports</id>
-                        <phase>test</phase>
-                        <configuration>
-                            <tasks>
-                                <junitreport todir="target/">
-                                    <fileset dir="target/">
-                                        <include name="**/*.xml"/>
-                                    </fileset>
-                                    <report format="noframes" todir="target/"/>
-                                </junitreport>
-                            </tasks>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.ant</groupId>
-                        <artifactId>ant-junit</artifactId>
-                        <version>1.8.0</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.apache.ant</groupId>
-                        <artifactId>ant-trax</artifactId>
-                        <version>1.8.0</version>
-                    </dependency>
-                </dependencies>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
             </plugin>
         </plugins>
     </build>
-
 </project>

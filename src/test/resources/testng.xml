@@ -4,7 +4,10 @@
     <listeners>
 <!--        <listener class-name="com.assurity.automation.engine.managers.FrameworkReportManager" />-->
 <!--        <listener class-name="com.assurity.automation.engine.managers.FrameworkDashBoardManager" />-->
-        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+<!--        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />-->
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+
     </listeners>
     <test name="API Response Content Validation Test" >
         <classes>
