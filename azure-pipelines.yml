@@ -22,5 +22,5 @@ steps:
     jdkArchitectureOption: 'x64'
     mavenAuthenticateFeed: true
     publishJUnitResults: true
-    testResultsFiles: '**/target/failsafe-reports/TEST-*.xml'
-    goals: 'test'
+    testResultsFiles: '**/target/failsafe-reports/xml/*results.xml'
+    goals: 'install'
